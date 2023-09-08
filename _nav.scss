@@ -1,0 +1,40 @@
+.navi {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent !important;
+}
+.navi .cont {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navi .name {
+  color: #f0f0f0 !important;
+}
+.navi .nav-link {
+  color: #f0f0f0 !important;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: #f0f0f0;
+    width: 0;
+    bottom: 5px;
+    height: 2px;
+    left: 50%;
+    transition: 0.3s ease;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navi .nav-link {
+    &::after {
+      left: 0;
+    }
+  }
+}

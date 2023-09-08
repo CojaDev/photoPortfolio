@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/8c4cda093e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Online Portfolio</title>
+  </head>
+  <body>
+    <canvas id="body"></canvas>
+    <nav class="navbar navbar-expand-lg bg-light navi">
+      <div class="container cont">
+        <a class="navbar-brand name" href="#">Michael Johnson</a>
+        <button
+          class="navbar-toggler text-white border border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars" style="color: #f0f0f0"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="min-vh-100 d-flex smooth-scroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="naslov">
+              <div class="content">
+                <p>ABOUT ME</p>
+                <h1>Hello, I am Michael Johnson, a passionate photographer.</h1>
+                <p>
+                  Photography isn't just my profession, it's my lifelong
+                  passion. I find the extraordinary in everyday moments, whether
+                  it's capturing the magic of weddings, the beauty of
+                  landscapes, or candid expressions. Every shot I take is
+                  infused with my heart and soul.
+                </p>
+                <div class="buttons">
+                  <a href="#">See my Portfolio</a>
+                  <a class="ms-md-2 ms-sm-0 mt-md-0 mt-sm-2" href="#"
+                    >Contact Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-left">
+            <div class="row justify-content-between align-items-center">
+              <div class="fotograf">
+                <img
+                  class="img-fluid"
+                  src="img/fotograf2.png"
+                  draggable="false"
+                  alt="fotograf"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-padding"></div>
+
+    <section id="why" class="smooth-scroll">
+      <div class="container">
+        <h2 class="text-black">Why you should hire me</h2>
+        <div class="row">
+          <div
+            class="text-holder col-lg-5 col-md-8 col-sm-12 ms-auto me-auto shadow"
+          >
+            <h3 class="naslov text-black"></h3>
+            <p class="text text-black"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle shadow">
+              <i class="fa-solid fa-image"></i>
+              <p class="text-black">Diverse Portfolio</p>
+            </div>
+            <div class="circle shadow">
+              <i class="fa-solid fa-camera"></i>
+              <p class="text-black">Professional Equipment</p>
+            </div>
+            <div class="circle shadow">
+              <i class="fa-solid fa-user-group"></i>
+              <p class="text-black">Client Testimonials</p>
+            </div>
+            <div class="circle shadow">
+              <i class="fa-solid fa-hourglass-start"></i>
+              <p class="text-black">Timely Delivery</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="buttons">
+            <button class="btn" id="prev" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-padding"></div>
+    <footer class="footer shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12 p-5 pb-0">
+            <h2>Contact</h2>
+            <div class="line"></div>
+            <h3>Representation (North America)</h3>
+            <p>Email: contact@Michael.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+
+            <h3>Representation (Worldwide)</h3>
+            <p>Email: global@Michael.com</p>
+            <p>Phone: +44 1234 567890</p>
+
+            <h3>Email Inquiries:</h3>
+            <p>Email: MichaelJohnson@gmail.com</p>
+            <div class="social-icons mt-4">
+              <i class="fa-brands fa-linkedin display-6"></i>
+              <i class="fa-brands fa-instagram display-6"></i>
+              <i class="fa-brands fa-dribbble display-6"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-5 pb-0">
+            <h2>Hit me up</h2>
+            <div class="line"></div>
+            <form>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Subject" />
+              <input type="email" id="email" placeholder="Email" />
+              <textarea placeholder="Message" rows="3"></textarea>
+              <input class="ms-auto" type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 p-5 pb-0">
+            <div class="lowerFooter d-flex justify-content-between">
+              <p>&copy; 2023 Michael Johnson. All Rights Reserved.</p>
+              <p>
+                Developed by
+                <a target="_blank" href="https://github.com/CojaDev">CojaDev</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+    <script src="granim.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
