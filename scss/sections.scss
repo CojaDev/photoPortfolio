@@ -1,0 +1,162 @@
+#why {
+  background-color: $background-color;
+  min-height: 90vh;
+}
+#why h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#why .container {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+#why .progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  justify-content: space-between;
+  position: relative;
+  margin: 30px;
+  width: 530px;
+}
+#why .progress-container::before {
+  content: '';
+  width: 92.1%;
+  height: 4px;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+#why .progress {
+  width: 0%;
+  height: 4px;
+  background-color: royalblue;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+#why .circle {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  border: #e4e4e4 4px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e4e4;
+  z-index: 1;
+  transition: all 0.62s ease;
+  position: relative;
+}
+#why .circle i {
+  transform: translateY(-50px);
+  font-size: 40px;
+  position: absolute;
+}
+#why .circle p {
+  transform: translateY(50px);
+  color: black;
+}
+
+#why .circle.active {
+  height: 21px;
+  width: 21px;
+  border-color: royalblue;
+  color: royalblue;
+  font-weight: 700;
+  & i {
+    color: royalblue;
+  }
+}
+#why .buttons {
+  user-select: none;
+}
+#why .btn {
+  user-select: none;
+  margin-top: 50px;
+  padding: 5px 24px;
+  border: 2px solid royalblue;
+  background-color: white;
+  border-radius: 4px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: royalblue;
+  transition: 0.2s ease;
+}
+#why .btn:active {
+  transform: scale(0.92);
+}
+#why .btn:disabled {
+  border-color: #e4e4e4;
+  color: #e4e4e4;
+}
+#why .text-holder {
+  border-radius: 4px;
+  margin-bottom: 70px;
+  padding: 25px;
+  background-color: white;
+  height: 200px;
+}
+#why .text-holder h3 {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+#why .text-holder p {
+  text-align: justify;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 770px) {
+  #why h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #why {
+    min-height: 100vh;
+  }
+  #why .progress-container {
+    max-width: 355px;
+  }
+  #why .progress-container::before {
+    content: '';
+    width: 93%;
+  }
+  #why .progress-container p {
+    font-size: 14px;
+  }
+  #why .text-holder {
+    padding: 30px;
+  }
+
+  #why .text-holder {
+    background-color: $background-color;
+  }
+}
+@media only screen and (max-width: 440px) {
+  #why .progress-container {
+    max-width: 300px;
+  }
+  #why .progress-container p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  #why .progress-container p {
+    font-size: 12px;
+  }
+}
